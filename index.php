@@ -3,7 +3,7 @@
 $nama = "Muhammad Irfan Lutfi";
 $umur = 19;
 
-$alamat = "Sukadana, Lampung Timur";
+$alamat = "Sukadana, Lampung Timur, Lampung";
 
 
 echo $nama;
