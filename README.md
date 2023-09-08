@@ -54,7 +54,7 @@ $nilai = null;
 
 PHP
 
-`php
+```php
  <?php
     $namaFaisal = "Faisal";
     $nilaiKimiaFaisal = 85;
@@ -74,7 +74,7 @@ PHP
     $nilaiBiologiChania = 95;
     $nilaiMatematikaChania = 91;
     ?>
-`
+```
 
 HTML
 
