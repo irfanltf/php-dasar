@@ -123,6 +123,25 @@ HTML
 ```
 
 
+## Buatlah Tampilan berikut ini
+
+<img width="1296" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/1799596b-739c-41fb-847d-b7a948cc08d1">
+
+  dengan ketentuan :
+- Kolom Produk dan Harga, disimpan pada variable
+- Kolom	Diskon (10%)	dihitung menggunakan operator dan disimpan menggunakan variable
+- Kolom Harga Setelah Diskon dihitung menggunakan operator dan disimpan menggunakan variable
+
+
+
+## Revisi Tugas sebelumnya menjadi seperti ini
+
+<img width="1449" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/2e5d461f-e56f-43d4-b153-4b21a90d2d64">
+
+dengan ketentuan :
+- Kolom Stok disimpan kedalam variable
+- Baris total menghitung jumlah Stok
+- Total harga menghitung jumlah harga
 
 ## License
 
