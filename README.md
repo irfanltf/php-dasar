@@ -143,6 +143,11 @@ dengan ketentuan :
 - Baris total menghitung jumlah Stok
 - Total harga menghitung jumlah harga
 
+## Membuat Kaklulator HTML sederhana
+
+![calc](https://github.com/irfanltf/php-dasar/assets/48278734/cff88527-7201-434f-858e-05e07e309685)
+
+
 ## License
 
 [mirfanlutfi](https://github.com/irfanltf)
