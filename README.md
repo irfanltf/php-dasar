@@ -145,7 +145,16 @@ dengan ketentuan :
 
 ## Membuat Kaklulator HTML sederhana
 
-![calc](https://github.com/irfanltf/php-dasar/assets/48278734/cff88527-7201-434f-858e-05e07e309685)
+![code](https://github.com/irfanltf/php-dasar/assets/48278734/b88d26fe-8891-425a-aa09-ef37608e501b)
+
+
+## Menggunakan variable di file lain
+Scenario
+- Buatlah 2 file php dengan nama __variable.php__ dan __index.php__
+- pada file __variable.php__ isi dengan variable yang menyimpan nama dan umur
+- pada file __index.php__ gunakan fungsi include ke __variable.php__ untuk menggunakan variable yang sudah dibuat di __variable.php__ lalu tuliskan kode seperti berikut ini, disini kita ingin menampilkan umur saat ini, umur 1 tahun kedepan, dan umur setahun yang lalu
+  
+  ![variable](https://github.com/irfanltf/php-dasar/assets/48278734/41eb8aad-a32f-4f9f-9c5c-0626a4e8562e)
 
 
 ## License
