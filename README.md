@@ -1,10 +1,10 @@
 # php-dasar
 * [Tipe data dalam PHP](#2-tipe-data)
-  + [Tipe data String)](#1-tipe-data-string)
-  + [Tipe data Integer)](#2-tipe-data-inteeger)
+  + [Tipe data String](#1-tipe-data-string)
+  + [Tipe data Integer](#2-tipe-data-inteeger)
   + [Tipe data Float)](#3-tipe-data-float)
-  + [Tipe data Boolean)](#4-tipe-data-bolan)
-  + [Tipe data Null)](#5-tipe-data-null)
+  + [Tipe data Boolean](#4-tipe-data-boolean)
+  + [Tipe data Null](#5-tipe-data-null)
 * [Struktur Kendali](#2-struktur-kendali)
   
 # Tipe Data dalam PHP
