@@ -6,7 +6,7 @@
   + [Tipe data Boolean](#4-tipe-data-boolean)
   + [Tipe data Null](#5-tipe-data-null)
 * [Struktur Kendali](#2-Struktur-Kendali)
-  + [Pernyataan if](#1-pernyataan-if)
+  + [Pernyataan if](#1-if)
   + [Pernyataan else](#2-pernyataan-else)
   + [Pernyataan else-if](#3-pernyataan-else-if)
   + [Pernyataan operator ternary](#4-pernyataan-operator-ternary)
