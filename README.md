@@ -7,8 +7,8 @@
   + [Tipe data Null](#5-tipe-data-null)
 * [Struktur Kendali](#2-Struktur-Kendali)
   + [Pernyataan if](#1-if)
-  + [Pernyataan else](#2-pernyataan-else)
-  + [Pernyataan else-if](#3-pernyataan-else-if)
+  + [Pernyataan else](#2-else)
+  + [Pernyataan else-if](#3-else-if)
   + [Pernyataan operator ternary](#4-pernyataan-operator-ternary)
   + [Pernyataan switch case](#5-pernyataan-switch-case)
   + [Pernyataan for](#6-pernyataan-for)
@@ -204,7 +204,39 @@ if ($nilai >= 70) {
 }
 ```
 
+## 2. else
 
+Pernyataan else digunakan bersama dengan if untuk memberikan alternatif ketika kondisi dalam if tidak benar.
+Ini memungkinkan untuk menjalankan blok kode alternatif.
+
+```php
+$nilai = 60;
+if ($nilai >= 70) {
+    echo "Selamat, Anda lulus!";
+} else {
+    echo "Maaf, Anda belum lulus.";
+}
+```
+
+## 3. else if
+Pernyataan elseif digunakan untuk menambahkan kondisi tambahan setelah if. Jika kondisi dalam if tidak benar, maka kondisi dalam elseif akan cek. Ini memungkinkan untuk menguji beberapa kondisi secara berurutan.
+
+```php
+$nilai = 60;
+if ($nilai >= 70) {
+    echo "Selamat, Anda lulus!";
+} elseif ($nilai >= 60) {
+    echo "Anda hampir lulus.";
+} else {
+    echo "Maaf, Anda belum lulus.";
+}
+```
+
+
+## Contoh Kasus (1)
+identifikasikan menjadi sebuah penjelasan tentang kode dibawah ini :
+
+![1](https://github.com/irfanltf/php-dasar/assets/48278734/f6b6db43-c8c3-44e6-8791-02d576ac8bbf)
 
 
 ## License
