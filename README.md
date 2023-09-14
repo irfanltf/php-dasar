@@ -7,15 +7,15 @@
   + [Tipe data Null](#5-tipe-data-null)
 * [Struktur Kendali](#2-struktur-kendali)
   + [Pernyataan if](#1-pernyataan-if)
-  + [Pernyataan else](#1-pernyataan-else)
-  + [Pernyataan else-if](#1-pernyataan-else-if)
-  + [Pernyataan operator ternary](#1-pernyataan-operator-ternary)
-  + [Pernyataan switch case](#1-pernyataan-switch-case)
-  + [Pernyataan for](#1-pernyataan-for)
-  + [Pernyataan while](#1-pernyataan-while)
-  + [Pernyataan do while](#1-pernyataan-do-while)
-  + [Pernyataan foreach](#1-pernyataan-foreach)
-  + [Pernyataan nested loop](#1-pernyataan-nested-loop)
+  + [Pernyataan else](#2-pernyataan-else)
+  + [Pernyataan else-if](#3-pernyataan-else-if)
+  + [Pernyataan operator ternary](#4-pernyataan-operator-ternary)
+  + [Pernyataan switch case](#5-pernyataan-switch-case)
+  + [Pernyataan for](#6-pernyataan-for)
+  + [Pernyataan while](#7-pernyataan-while)
+  + [Pernyataan do while](#8-pernyataan-do-while)
+  + [Pernyataan foreach](#9-pernyataan-foreach)
+  + [Pernyataan nested loop](#10-pernyataan-nested-loop)
   
   
 # 1. Tipe Data dalam PHP
@@ -192,7 +192,9 @@ Scenario
 
 
 # 2.Struktur Kendali
+Struktur kendali adalah bagian dari bahasa pemrograman yang memungkinkan Anda mengontrol alur eksekusi program berdasarkan kondisi atau keputusan tertentu. Ini memungkinkan program Anda untuk membuat keputusan tentang tindakan yang akan diambil berdasarkan berbagai situasi yang mungkin terjadi selama eksekusi. Dalam bahasa pemrograman PHP, ada beberapa jenis struktur kendali utama:
 
+##
 
 
 
