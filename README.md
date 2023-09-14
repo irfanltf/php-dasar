@@ -6,8 +6,19 @@
   + [Tipe data Boolean](#4-tipe-data-boolean)
   + [Tipe data Null](#5-tipe-data-null)
 * [Struktur Kendali](#2-struktur-kendali)
+  + [Pernyataan if](#1-pernyataan-if)
+  + [Pernyataan else](#1-pernyataan-else)
+  + [Pernyataan else-if](#1-pernyataan-else-if)
+  + [Pernyataan operator ternary](#1-pernyataan-operator-ternary)
+  + [Pernyataan switch case](#1-pernyataan-switch-case)
+  + [Pernyataan for](#1-pernyataan-for)
+  + [Pernyataan while](#1-pernyataan-while)
+  + [Pernyataan do while](#1-pernyataan-do-while)
+  + [Pernyataan foreach](#1-pernyataan-foreach)
+  + [Pernyataan nested loop](#1-pernyataan-nested-loop)
   
-# Tipe Data dalam PHP
+  
+# 1. Tipe Data dalam PHP
 
 Tipe data dalam pemrograman PHP adalah cara untuk mengklasifikasikan dan mengelompokkan nilai-nilai berdasarkan jenis atau karakteristik tertentu. Pemahaman yang baik tentang tipe data sangat penting karena mereka memengaruhi bagaimana Anda memanipulasi dan memproses data dalam aplikasi PHP Anda. Dalam PHP, ada beberapa tipe data dasar yang umum digunakan.
 
@@ -181,6 +192,8 @@ Scenario
 
 
 # 2.Struktur Kendali
+
+
 
 
 ## License
