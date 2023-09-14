@@ -1,5 +1,12 @@
 # php-dasar
-materi php dasar
+* [Tipe data dalam PHP](#2-tipe-data)
+  + [Tipe data String)](#1-tipe-data-string)
+  + [Tipe data Integer)](#2-tipe-data-inteeger)
+  + [Tipe data Float)](#3-tipe-data-float)
+  + [Tipe data Boolean)](#4-tipe-data-bolan)
+  + [Tipe data Null)](#5-tipe-data-null)
+* [Struktur Kendali](#2-struktur-kendali)
+  
 # Tipe Data dalam PHP
 
 Tipe data dalam pemrograman PHP adalah cara untuk mengklasifikasikan dan mengelompokkan nilai-nilai berdasarkan jenis atau karakteristik tertentu. Pemahaman yang baik tentang tipe data sangat penting karena mereka memengaruhi bagaimana Anda memanipulasi dan memproses data dalam aplikasi PHP Anda. Dalam PHP, ada beberapa tipe data dasar yang umum digunakan.
@@ -13,7 +20,7 @@ $nama = "Efika";
 $alamat = 'Lampung Barat';
 ```
 
-## 2. Tipe Data String
+## 2. Tipe Data Integer
 
 Tipe data integer digunakan untuk merepresentasikan bilangan bulat positif atau negatif.
 
@@ -171,6 +178,9 @@ Scenario
 - pada file __index.php__ gunakan fungsi include ke __variable.php__ untuk menggunakan variable yang sudah dibuat di __variable.php__ lalu tuliskan kode seperti berikut ini, disini kita ingin menampilkan umur saat ini, umur 1 tahun kedepan, dan umur setahun yang lalu
   
   ![variable](https://github.com/irfanltf/php-dasar/assets/48278734/41eb8aad-a32f-4f9f-9c5c-0626a4e8562e)
+
+
+# 2.Struktur Kendali
 
 
 ## License
