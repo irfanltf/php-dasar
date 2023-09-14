@@ -194,7 +194,16 @@ Scenario
 # 2. Struktur Kendali
 Struktur kendali adalah bagian dari bahasa pemrograman yang memungkinkan Anda mengontrol alur eksekusi program berdasarkan kondisi atau keputusan tertentu. Ini memungkinkan program Anda untuk membuat keputusan tentang tindakan yang akan diambil berdasarkan berbagai situasi yang mungkin terjadi selama eksekusi. Dalam bahasa pemrograman PHP, ada beberapa jenis struktur kendali utama:
 
-##
+## 1. if
+Pernyataan if digunakan untuk menguji suatu kondisi. Jika kondisi tersebut benar (true), maka blok kode di dalamnya akan dieksekusi. Jika kondisi salah (false), blok kode tersebut dilewati. lihatlah kode dibawah ini :
+
+```php
+$nilai = 75;
+if ($nilai >= 70) {
+    echo "Selamat, Anda lulus!";
+}
+```
+
 
 
 
