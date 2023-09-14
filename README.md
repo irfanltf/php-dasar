@@ -1,5 +1,5 @@
 # php-dasar
-* [Tipe data dalam PHP](#2-tipe-data)
+* [Tipe data dalam PHP](#1-tipe-data)
   + [Tipe data String](#1-tipe-data-string)
   + [Tipe data Integer](#2-tipe-data-inteeger)
   + [Tipe data Float)](#3-tipe-data-float)
@@ -191,7 +191,7 @@ Scenario
   ![variable](https://github.com/irfanltf/php-dasar/assets/48278734/41eb8aad-a32f-4f9f-9c5c-0626a4e8562e)
 
 
-# 2.Struktur Kendali
+# 2. Struktur Kendali
 Struktur kendali adalah bagian dari bahasa pemrograman yang memungkinkan Anda mengontrol alur eksekusi program berdasarkan kondisi atau keputusan tertentu. Ini memungkinkan program Anda untuk membuat keputusan tentang tindakan yang akan diambil berdasarkan berbagai situasi yang mungkin terjadi selama eksekusi. Dalam bahasa pemrograman PHP, ada beberapa jenis struktur kendali utama:
 
 ##
