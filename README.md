@@ -123,7 +123,7 @@ HTML
 ```
 
 
-## Buatlah Tampilan berikut ini
+## Buatlah Tampilan berikut ini (1)
 
 <img width="1296" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/1799596b-739c-41fb-847d-b7a948cc08d1">
 
@@ -134,7 +134,7 @@ HTML
 
 
 
-## Revisi Tugas sebelumnya menjadi seperti ini
+## Revisi Tugas sebelumnya menjadi seperti ini (1)
 
 <img width="1449" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/2e5d461f-e56f-43d4-b153-4b21a90d2d64">
 
@@ -142,6 +142,22 @@ dengan ketentuan :
 - Kolom Stok disimpan kedalam variable
 - Baris total menghitung jumlah Stok
 - Total harga menghitung jumlah harga
+
+## Buatlah Tampilan berikut ini (2)
+
+<img width="590" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/bcc8db76-3e21-4189-88a9-65c1016e8f31">
+
+dengan ketentuan :
+- Kolom Bulan, total Penjualan, Biaya Operasional dan Laba Bersih disimpan pada variable
+- Kaba bersih diperoleh dari total penjualan - biaya operasional
+
+## Revisi Tugas sebelumnya menjadi seperti ini (2)
+
+<img width="568" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/5dc9e50f-622d-4c0c-8ce8-9e6a5ad74af3">
+
+dengan ketentuan :
+- baris total  terdapat kolom yang mehitung total semua bulan
+- gunaknan operasi matematika untuk menghitung total yang ada
 
 ## Membuat Kaklulator HTML sederhana
 
