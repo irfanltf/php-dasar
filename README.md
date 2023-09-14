@@ -5,7 +5,7 @@
   + [Tipe data Float)](#3-tipe-data-float)
   + [Tipe data Boolean](#4-tipe-data-boolean)
   + [Tipe data Null](#5-tipe-data-null)
-* [Struktur Kendali](#2-struktur-kendali)
+* [Struktur Kendali](#2-Struktur-Kendali)
   + [Pernyataan if](#1-pernyataan-if)
   + [Pernyataan else](#2-pernyataan-else)
   + [Pernyataan else-if](#3-pernyataan-else-if)
