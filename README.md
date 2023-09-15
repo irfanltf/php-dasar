@@ -9,13 +9,13 @@
   + [Pernyataan if](#1-if)
   + [Pernyataan else](#2-else)
   + [Pernyataan else-if](#3-else-if)
-  + [Pernyataan operator ternary](#4-pernyataan-operator-ternary)
-  + [Pernyataan switch case](#5-pernyataan-switch-case)
-  + [Pernyataan for](#6-pernyataan-for)
-  + [Pernyataan while](#7-pernyataan-while)
-  + [Pernyataan do while](#8-pernyataan-do-while)
-  + [Pernyataan foreach](#9-pernyataan-foreach)
-  + [Pernyataan nested loop](#10-pernyataan-nested-loop)
+  + [Pernyataan operator ternary](#4-operator-ternary)
+  + [Pernyataan switch case](#5-switch-case)
+  + [Pernyataan for](#6-for)
+  + [Pernyataan while](#7-while)
+  + [Pernyataan do while](#8-do-while)
+  + [Pernyataan foreach](#9-foreach)
+  + [Pernyataan nested loop](#10-nested-loop)
   
   
 # 1. Tipe Data dalam PHP
@@ -241,12 +241,239 @@ if ($nilai >= 70) {
 ```
 
 
-## Contoh Kasus (1)
+## Contoh Kasus (1) Pengkondisian If
 identifikasikan menjadi sebuah penjelasan tentang kode dibawah ini :
 
 ![1](https://github.com/irfanltf/php-dasar/assets/48278734/f6b6db43-c8c3-44e6-8791-02d576ac8bbf)
 
-##4. Operator Ternary
+## 4. Operator Ternary
+(If Else dalam 1 baris)
+Operator Ternary (juga dikenal sebagai ternary conditional operator atau conditional expression) adalah operator khusus dalam banyak bahasa pemrograman, termasuk PHP, yang digunakan untuk mengevaluasi ekspresi berdasarkan kondisi tertentu dan mengembalikan satu dari dua nilai berdasarkan kondisi tersebut. Operator ternary biasanya digunakan sebagai alternatif singkat untuk pernyataan if-else. Format umum dari operator ternary adalah:
+
+```php
+(condition) ? value_if_true : value_if_false;
+```
+__condition:__ Kondisi yang akan dievaluasi. Jika kondisi ini benar (true), maka value_if_true akan digunakan; jika kondisi salah (false), maka value_if_false yang akan digunakan.
+
+__value_if_true:__ Nilai yang akan dikembalikan jika kondisi benar.
+
+__value_if_false:__ Nilai yang akan dikembalikan jika kondisi salah.
+
+__Contoh penggunaan :__
+
+```php
+$umur = 18;
+$status = ($umur >= 18) ? "Dewasa" : "Anak-anak";
+echo "Status: " . $status;
+```
+Pada contoh di atas, operator ternary digunakan untuk mengevaluasi apakah $umur lebih besar atau sama dengan 18. Jika benar, variabel $status akan diisi dengan "Dewasa"; jika salah, variabel $status akan diisi dengan "Anak-anak". Hasil akhirnya adalah "Status: Dewasa" karena nilai $umur adalah 18, yang memenuhi kondisi.
+
+__contoh lain :__
+
+```php
+$total_belanja = 120;
+$diskon = ($total_belanja > 100) ? ($total_belanja * 0.10) : 0;
+echo "Diskon: $" . $diskon;
+```
+__kalau dalam bentuk if else biasa :__
+
+```php
+$total_belanja = 120;
+if ($total_belanja > 100) {
+    $diskon = $total_belanja * 0.10;
+} else {
+    $diskon = 0;
+}
+echo "Diskon: $" . $diskon;
+```
+
+## 5. Switch Case
+Pernyataan switch digunakan untuk membuat percabangan berdasarkan nilai ekspresi tertentu. Ini memungkinkan Anda untuk menjalankan kode berbeda berdasarkan nilai ekspresi yang sesuai dengan salah satu dari beberapa "kunci" yang didefinisikan. Berikut adalah format umum dari pernyataan switch dalam PHP:
+```php
+
+variable ekspresi;
+
+switch (ekspresi) {
+    case nilai_1:
+        // Blok kode yang akan dieksekusi jika ekspresi sama dengan nilai_1
+        break;
+    case nilai_2:
+        // Blok kode yang akan dieksekusi jika ekspresi sama dengan nilai_2
+        break;
+    // case lainnya jika diperlukan
+    default:
+        // Blok kode yang akan dieksekusi jika tidak ada kasus yang cocok
+}
+```
+
+__contoh kasusnya__
+
+```php
+//misalnya terdapat variable $day yang isinya Monday
+$day = "Monday";
+
+
+//variable $day akan dicek dimasukan ke dadlam switch
+switch ($day) {
+//apakah nilainya Monday? jika iya eksekusi perintah didalamnya
+    case "Monday":
+        echo "It's Monday!";
+//break dgunakan untuk keluar dari kondisi
+        break;
+//apakah nilainya Tuesday? jika iya eksekusi perintah didalamnya
+    case "Tuesday":
+        echo "It's Tuesday!";
+        break;
+//apakah nilainya Wednesday, jika iya eksekusi perintah didalamnya
+    case "Wednesday":
+        echo "It's Wednesday!";
+        break;
+//jika tidak ada yang cocok dengan case diatas maka eksekusi bagian default
+    default:
+        echo "It's another day.";
+}
+```
+
+## Contoh Kasus (2) Membuat Halaman Login 
+
+__Kode html :__
+
+![halaman login](https://github.com/irfanltf/php-dasar/assets/48278734/f98d8837-975c-437e-b5d9-c353a070f503)
+
+__Kode php :__
+
+![php kondisi](https://github.com/irfanltf/php-dasar/assets/48278734/5dc57133-bddd-4a7f-8d29-2c97373c392e)
+
+
+## 6. for
+Perulangan for adalah salah satu struktur kendali yang digunakan dalam pemrograman untuk mengulangi serangkaian pernyataan dengan jumlah iterasi tertentu. __Perulangan for umumnya digunakan ketika Anda tahu berapa kali perlu menjalankan pernyataan tersebut__.
+```php
+for (inisialisasi; kondisi; peningkatan) {
+    // Blok kode yang akan diulang
+}
+```
+
+
+__contohnya :__
+
+```php
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh Perulangan For dalam HTML</title>
+</head>
+
+<body>
+    <h1>Daftar Angka 1 hingga 10</h1>
+    <ul>
+        <?php
+        for ($i = 1; $i <= 10; $i++) {
+            echo "<li>Item ke-$i</li>";
+        }
+        ?>
+    </ul>
+</body>
+
+</html>
+```
+
+## 7. while
+Perulangan while  adalah struktur kendali yang digunakan dalam pemrograman untuk mengulangi serangkaian pernyataan selama kondisi tertentu terpenuhi. 
+Perulangan while menguji kondisi sebelum menjalankan blok kode
+
+```php
+while (kondisi) {
+    // Blok kode yang akan diulang
+}
+```
+
+__contohnya :__
+
+```php
+$angka = 1;
+while ($angka <= 5) {
+    echo "Angka: $angka<br>";
+    $angka++;
+}
+```
+
+
+## 8. Do While
+Perulangan while  adalah struktur kendali yang digunakan dalam pemrograman untuk mengulangi serangkaian pernyataan selama kondisi tertentu terpenuhi. do-while menjalankan blok kode setidaknya satu kali, dan kemudian menguji kondisi setelahnya.
+
+```php
+do {
+    // Blok kode yang akan diulang
+} while (kondisi);
+```
+
+blok kode dalam do akan selalu dijalankan sekali, bahkan jika kondisi awalnya salah. Kemudian, kondisi akan diperiksa, dan jika benar (true), perulangan akan dilanjutkan.
+__contohnya :__
+
+```php
+$angka = 1;
+do {
+    echo "Angka: $angka<br>";
+    $angka++;
+} while ($angka <= 5);
+```
+Dalam contoh di atas, blok kode dalam do akan dijalankan sekali, dan kemudian kondisi akan diperiksa. Karena kondisinya benar, perulangan akan dilanjutkan dan mencetak angka dari 1 hingga 5.
+
+## 9. Foreach
+Foreach adalah jenis perulangan khusus dalam pemrograman PHP yang digunakan untuk mengiterasi (mengulang) elemen-elemen dalam sebuah array atau objek. For-each digunakan untuk mengeksekusi pernyataan atau blok kode yang sama pada setiap elemen dalam array atau objek, sehingga Anda tidak perlu menghitung indeks atau jumlah elemen secara manual.
+
+```php
+foreach ($array_or_object as $item) {
+    // Blok kode yang akan diulang untuk setiap $item
+}
+```
+
+$array_or_object: Array atau objek yang akan diiterasi.
+$item: Variabel yang akan mewakili setiap elemen dalam array atau properti dalam objek.
+
+
+__contohnya :__
+```php
+// Contoh penggunaan foreach dengan array
+$fruits = array("Apel", "Pisang", "Jeruk", "Mangga");
+
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
+}
+```
+
+## 10. Nested Loop
+Nested loop adalah konsep dalam pemrograman di mana satu perulangan (loop) ditempatkan di dalam perulangan lain. Ini berarti Anda memiliki perulangan dalam perulangan, dan setiap iterasi dari perulangan luar akan mengulang seluruh perulangan dalamnya. Nested loop berguna ketika Anda perlu mengakses setiap elemen dalam dua dimensi atau lebih, seperti matriks atau tabel.
+
+__contohnya :__
+```php
+for ($i = 1; $i <= 3; $i++) {
+    for ($j = 1; $j <= 2; $j++) {
+        echo "Iterasi luar: $i, Iterasi dalam: $j<br>";
+    }
+}
+```
+Penjelasan:
+
+Loop luar ($i) akan dieksekusi tiga kali, dengan nilai $i dari 1 hingga 3.
+Di dalam setiap iterasi loop luar, loop dalam ($j) akan dieksekusi dua kali, dengan nilai $j dari 1 hingga 2.
+Dalam setiap iterasi loop dalam, pesan yang mencakup nilai $i dan $j akan dicetak.
+
+__hasil output yang terjadi adalah :__
+```php
+Iterasi luar: 1, Iterasi dalam: 1
+Iterasi luar: 1, Iterasi dalam: 2
+Iterasi luar: 2, Iterasi dalam: 1
+Iterasi luar: 2, Iterasi dalam: 2
+Iterasi luar: 3, Iterasi dalam: 1
+Iterasi luar: 3, Iterasi dalam: 2
+```
+## Contoh Kasus (3) Membuat Dropdown nomor
+![for2](https://github.com/irfanltf/php-dasar/assets/48278734/1a7a9d93-650a-4d9f-a25d-9438baf7234f)
+
+## Contoh Kasus (4) Membuat Dropdown Pilihan Warna
+![foreach](https://github.com/irfanltf/php-dasar/assets/48278734/13b10a4c-6e03-4625-811d-7d12de86ce5c)
 
 
 ## License
