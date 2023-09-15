@@ -191,6 +191,14 @@ Scenario
   ![variable](https://github.com/irfanltf/php-dasar/assets/48278734/41eb8aad-a32f-4f9f-9c5c-0626a4e8562e)
 
 
+Nilai Kelompok 1 : 7
+Nilai Kelompok 2 : 5
+Nilai Kelompok 3 : 10
+Nilai Kelompok 4 : 
+Nilai Kelompok 5 : 10
+Nilai Kelompok 6 :
+
+
 # 2. Struktur Kendali
 Struktur kendali adalah bagian dari bahasa pemrograman yang memungkinkan Anda mengontrol alur eksekusi program berdasarkan kondisi atau keputusan tertentu. Ini memungkinkan program Anda untuk membuat keputusan tentang tindakan yang akan diambil berdasarkan berbagai situasi yang mungkin terjadi selama eksekusi. Dalam bahasa pemrograman PHP, ada beberapa jenis struktur kendali utama:
 
