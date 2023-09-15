@@ -238,6 +238,8 @@ identifikasikan menjadi sebuah penjelasan tentang kode dibawah ini :
 
 ![1](https://github.com/irfanltf/php-dasar/assets/48278734/f6b6db43-c8c3-44e6-8791-02d576ac8bbf)
 
+##4. Operator Ternary
+
 
 ## License
 
