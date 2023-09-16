@@ -26,6 +26,13 @@
   + [Apa itu Array](#1-apa-itu-array)
   + [Jenis-jenis Array](#2-jenis-jenis-array)
   + [Manipulasi Array](#3-manipulasi-array)
+* [Cookie dan Session](#5-cookie-dan-session)
+  + [Variabel Super Global dalam PHP](#1-variabel-super-global-dalam-php)
+  + [Session](#2-session)
+  + [Cookie](#3-cookie)
+* [Function](#6-Function)
+  + [Apa itu Function](#1-apa-itu-function)
+  + [Build in Function](#2-build-in-function)
   
 # 1. Tipe Data dalam PHP
 
