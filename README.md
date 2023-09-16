@@ -22,8 +22,10 @@
   + [Menggunakan metode GET dan POST](#3-menggunakan-metode-get-dan-post)
     + [Metode GET](#metode-get)
     + [Metode POST](#metode-post)
-    
-  
+* [Array Pada PHP](#4-array-php)
+  + [Apa itu Array](#1-apa-itu-array)
+  + [Jenis-jenis Array](#2-jenis-jenis-array)
+  + [Manipulasi Array](#3-manipulasi-array)
   
 # 1. Tipe Data dalam PHP
 
@@ -485,12 +487,82 @@ Iterasi luar: 3, Iterasi dalam: 2
 
 
 # 3. Pengolahan Form
+Pengolahan form adalah bagian penting dari pengembangan web yang memungkinkan pengguna berinteraksi dengan halaman web Anda. Dalam PHP, Anda dapat dengan mudah mengirim dan menerima data dari formulir HTML.
 ## 1. Mengirim dan menerima data dari formulir HTML
+Untuk mengirim data dari formulir HTML ke PHP, Anda perlu menentukan action dan method dalam elemen <form>. action adalah URL atau arah data ingin dikirimkan ke mana, sedangkan method dapat berupa GET atau POST.
+__mengirim__
+```php
+<form action="proses.php" method="post">
+    <input type="text" name="nama">
+    <button type="submit">Kirim</button>
+</form>
+```
+__menerima__
+Di dalam skrip PHP yang ditentukan dalam action, Anda dapat mengakses data formulir menggunakan $_POST (untuk metode POST) atau $_GET (untuk metode GET). Contoh PHP untuk mengambil data nama yang dikirim dengan metode POST:
+```php
+$nama = $_POST["nama"];
+```
+
 ## 2. Validasi input pengguna
+Validasi input pengguna adalah langkah penting untuk memastikan bahwa data yang dikirim oleh pengguna sesuai dengan aturan atau format yang diharapkan.
+
+Contoh validasi sederhana untuk memeriksa apakah sebuah input tidak kosong:
+```php
+if (isset($_POST["nama"]) && !empty($_POST["nama"])) {
+    // Data nama sudah diisi
+    $nama = $_POST["nama"];
+} else {
+    // Data nama kosong, berikan pesan kesalahan
+    $error = "Nama harus diisi.";
+}
+```
+
 ## 3. Menggunakan metode GET dan POST
 ### Metode GET
-### Metode POST
+Metode GET: Data formulir dikirim sebagai query string dalam URL. Metode ini cocok untuk mengambil data yang tidak sensitif seperti pencarian atau filter. Namun, karena data ditampilkan dalam URL, ini bisa tidak aman jika digunakan untuk data sensitif.
+Contoh URL dengan metode GET: https://contoh.com/cari.php?kata=kucing
 
+## Contoh Kasus (1) Mengirim dan Menerima dengan Metode GET
+
+__(Mengirim)__ buat file dengan nama _kirim_get.php_
+![get kirim](https://github.com/irfanltf/php-dasar/assets/48278734/3677adc4-d216-4c95-8560-a9ce6bbe0ebd)
+
+__(Menerima)__ buat file dengan nama _terima_get.php_
+![get_terima](https://github.com/irfanltf/php-dasar/assets/48278734/295b5c63-690b-4acf-a35a-2097ccd7b7b9)
+
+
+### Metode POST
+Metode POST: Data formulir dikirim secara tersembunyi dalam badan permintaan HTTP. Metode ini lebih aman untuk data sensitif seperti kata sandi. Dalam PHP, Anda mengakses data dengan $_POST.
+
+## Contoh Kasus (2) Mengirim dan Menerima dengan Metode POST
+__(Mengirim)__ buat file dengan nama _kirim_post.php_
+![post_kirim](https://github.com/irfanltf/php-dasar/assets/48278734/42800f39-b14f-484f-82e7-38aab3a9ff35)
+
+__(Menerima)__ buat file dengan nama _terima_post.php_
+![post_terima](https://github.com/irfanltf/php-dasar/assets/48278734/b5bb72c0-cf4f-47a2-9fa3-2c4894b92033)
+
+# 4. Array php
+## 1. Apa itu  Array
+
+__Apa itu Array?__
+Array adalah _struktur data_ yang digunakan untuk menyimpan kumpulan nilai atau elemen dalam satu variabel. Ini memungkinkan kita untuk _mengelola data dalam kelompok_, seperti daftar item atau koleksi data terkait. Array memiliki indeks yang memungkinkan kita mengakses setiap elemen dengan cara yang terstruktur.
+
+__Apa Fungsinya?__
+Array sangat berguna dalam pemrograman karena memungkinkan kita untuk:
+
+__Mengorganisasi Data:__ Array membantu dalam pengorganisiran data yang serupa. Contohnya, kita dapat menggunakan array untuk menyimpan daftar nama atau angka.
+
+__Efisiensi:__ Dengan menggunakan array, kita dapat mengakses dan memanipulasi data secara efisien. Kita dapat mengakses elemen array dengan cepat menggunakan indeksnya.
+
+__Iterasi:__ Array memungkinkan kita untuk mengulangi (loop) melalui elemen-elemen dalam struktur data dengan mudah, misalnya untuk mencetak daftar, menghitung nilai rata-rata, dll.
+
+__Pencarian dan Pengurutan:__ Array memberikan fasilitas untuk mencari dan mengurutkan data, yang penting dalam pemrosesan data.
+
+__Mengelola Data Terkait:__ Ketika kita memiliki data terkait, seperti data siswa dengan nama, usia, dan nilai, array dapat digunakan untuk mengelola data ini dalam satu struktur.
+
+
+## 2. Jenis-jenis Array
+## 3. Manipulasi Array
 
 ## License
 
