@@ -924,7 +924,20 @@ if (!isset($_SESSION['user_id'])) {
 // Ambil ID pengguna dari sesi
 $user_id = $_SESSION['user_id'];
 ?>
-``` 
+```
+
+
+# 6. Function
+## 1. Apa itu Function
+## 2. Jenis-Jenis Function
+### Build in Function
+### Custom Function
+### Custom Rekursif
+### Anonim Function
+### Callback Function
+## 3. Parameter dalam Function
+## 4. Return
+
 
 ## License
 
