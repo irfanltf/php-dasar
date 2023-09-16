@@ -16,6 +16,13 @@
   + [Pernyataan do while](#8-do-while)
   + [Pernyataan foreach](#9-foreach)
   + [Pernyataan nested loop](#10-nested-loop)
+* [Pengolahan Form](#3-pengolahan-form)
+  + [Mengirim dan menerima data dari formulir HTML](#1-mengirim-dan-menerima-data-dari-formulir-html)
+  + [Validasi input pengguna](#2-validasi-input-pengguna)
+  + [Menggunakan metode GET dan POST](#3-menggunakan-metode-get-dan-post)
+    + [Metode GET](#metode-get)
+    + [Metode POST](#metode-post)
+    
   
   
 # 1. Tipe Data dalam PHP
@@ -474,6 +481,15 @@ Iterasi luar: 3, Iterasi dalam: 2
 
 ## Contoh Kasus (4) Membuat Dropdown Pilihan Warna
 ![foreach](https://github.com/irfanltf/php-dasar/assets/48278734/13b10a4c-6e03-4625-811d-7d12de86ce5c)
+
+
+
+# 3. Pengolahan Form
+## 1. Mengirim dan menerima data dari formulir HTML
+## 2. Validasi input pengguna
+## 3. Menggunakan metode GET dan POST
+### Metode GET
+### Metode POST
 
 
 ## License
