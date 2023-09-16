@@ -32,7 +32,15 @@
   + [Cookie](#3-cookie)
 * [Function](#6-Function)
   + [Apa itu Function](#1-apa-itu-function)
-  + [Build in Function](#2-build-in-function)
+  + [Jenis-Jenis Function](#2-jenis-jenis-function)
+    + [Build in Function](#build-in-function)
+    + [Custom Function](#custom-function)
+    + [Custom Rekursif](#rekursif-function)
+    + [Anonim Function](#anonim-function)
+    + [Callback Function](#callback-function)
+  + [Parameter dalam Function](#3-parameter-dalam-function)
+  + [Nilai Kembali (Return)](#4-return)
+    
   
 # 1. Tipe Data dalam PHP
 
