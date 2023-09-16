@@ -763,7 +763,61 @@ __scenario :__
 7. Sehingga harusnya datanya tampil seperti diatas
 
 
+# 6. Cookie dan Session
+## 1. Variabel Super Global dalam PHP
+Variabel super global adalah variabel yang dapat diakses dari mana saja di dalam skrip PHP tanpa harus menggabungkan variabel dari cakupan lain. Beberapa variabel super global yang umum digunakan dalam PHP adalah:
 
+$_GET: Digunakan untuk mengambil data dari URL melalui metode GET. Data ini dapat diperoleh dengan menambahkan query string ke URL.
+
+$_POST: Digunakan untuk mengambil data yang dikirimkan ke server melalui metode POST. Biasanya digunakan untuk mengirim data melalui formulir.
+
+$_REQUEST: Menggabungkan data dari $_GET dan $_POST. Namun, penggunaan $_REQUEST sebaiknya dihindari karena dapat menimbulkan masalah keamanan.
+
+$_SESSION: Digunakan untuk mengelola data sesi pada server. Data dalam $_SESSION dapat diakses selama sesi pengguna berlangsung.
+
+$_COOKIE: Digunakan untuk mengambil dan mengelola data cookie yang disimpan di sisi klien. Data ini dapat digunakan untuk mengenali pengguna ketika mereka kembali ke situs web.
+
+$_SERVER: Berisi informasi tentang server dan lingkungan eksekusi PHP. Ini mencakup informasi seperti alamat IP pengguna, alamat URL, dan banyak lagi.
+
+$_ENV: Berisi variabel lingkungan yang dapat digunakan untuk mengambil informasi dari sistem operasi atau server.
+
+$_GLOBALS: Digunakan untuk mengakses variabel global dari cakupan global. Variabel dalam $_GLOBALS dapat diakses dan diubah dari mana saja dalam skrip.
+
+## 2. Session
+Session adalah cara untuk menyimpan data di server yang terkait dengan sesi pengguna tertentu. Data sesi dapat diakses dan digunakan di berbagai halaman web selama sesi pengguna berlangsung. 
+
+Cara kerja session:
+
+- Ketika sesi dimulai dengan session_start(), server akan memberikan ID sesi unik kepada pengguna.
+- Data sesi disimpan di server dengan menggunakan ID sesi sebagai kunci.
+- Setiap kali pengguna mengakses halaman web, server akan menggunakan ID sesi ini untuk mengambil data sesi yang sesuai.
+
+__bagaimana cara menjalankan session pada php?__
+1. Memulai Sesi: Untuk menggunakan session, Anda harus memulai sesi dengan session_start(). Ini biasanya ditempatkan di bagian atas halaman PHP sebelum output apa pun ke browser pengguna.
+   ```php
+   session_start();
+   ```
+2. Menyimpan Data dalam Sesi: Anda dapat menyimpan data dalam sesi dengan mengakses array asosiatif $_SESSION. Data ini dapat berupa variabel, array, atau objek.
+   ```php
+   $_SESSION['user_id'] = 9080980;
+   $_SESSION['user_name'] = "Abdul Halim";
+   ```
+3. Mengambil Data dari Sesi: Data yang disimpan dalam sesi dapat diambil kembali dengan cara yang sama seperti Anda mengakses elemen dalam array asosiatif.
+   ```php
+   $user_id = $_SESSION['user_id'];
+   $user_name = $_SESSION['user_name'];
+   ```
+
+4. Menghapus Data dari Sesi: Anda dapat menghapus data dari sesi dengan menggunakan perintah unset() atau dengan menghapus elemen dari array $_SESSION.
+    ```php
+    unset($_SESSION['user_name']);
+    ```
+5. Mengakhiri Sesi: Anda dapat mengakhiri sesi dengan session_destroy(). Ini akan menghapus semua data sesi yang ada. Setelah ini, pengguna perlu memulai sesi baru jika ingin mengakses data sesi.
+   ```php
+   session_destroy();
+   ```
+
+## 3. Cookie
 
 
 ## License
