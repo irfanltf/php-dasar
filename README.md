@@ -542,7 +542,7 @@ __(Menerima)__ buat file dengan nama _terima_post.php_
 ![post_terima](https://github.com/irfanltf/php-dasar/assets/48278734/b5bb72c0-cf4f-47a2-9fa3-2c4894b92033)
 
 # 4. Array php
-## 1. Apa itu  Array
+## 1. Apa itu Array
 
 __Apa itu Array?__
 Array adalah _struktur data_ yang digunakan untuk menyimpan kumpulan nilai atau elemen dalam satu variabel. Ini memungkinkan kita untuk _mengelola data dalam kelompok_, seperti daftar item atau koleksi data terkait. Array memiliki indeks yang memungkinkan kita mengakses setiap elemen dengan cara yang terstruktur.
@@ -560,9 +560,204 @@ __Pencarian dan Pengurutan:__ Array memberikan fasilitas untuk mencari dan mengu
 
 __Mengelola Data Terkait:__ Ketika kita memiliki data terkait, seperti data siswa dengan nama, usia, dan nilai, array dapat digunakan untuk mengelola data ini dalam satu struktur.
 
+__cara membuat array ada 2 cara :__
+```php
+// 1. menggunakan simbol berikut : []
+$array = [1,4,6,7,9];
+
+//2. menggunakan simbol keyword array()
+$array = array(1,4,6,7,9);
+```
 
 ## 2. Jenis-jenis Array
+
+- __Array Numerik:__ Ini adalah jenis array yang memiliki indeks numerik berurutan dan dimulai dari 0.
+
+  __contoh :__
+  
+  ```php
+  $nilai = array(90, 85, 78, 92, 88);
+  ```
+
+  __cara mengakses nilai dalam array numberik :__
+
+  ```php
+  echo $nilai[2];
+
+  // tulis nama variable, lalu didalam kurung siku isi dengan index ke berapa nilai yang ingin diambil
+  // hasil outputnya adalah 78
+  ```
+  
+- __Array Asosiatif:__ Ini adalah jenis array yang menggunakan kunci (key) atau nama sebagai indeks untuk setiap elemen, Array Asosiatif memiliki key dan value.
+
+  __contoh :__
+
+```php
+$siswa = array("nama" => "Nisa Aulia", "usia" => 19, "kelas" => "MI B");
+```
+
+  __cara mengakses nilai dalam array asosiatif :__
+
+  ```php
+  echo $siswa["nama"];
+
+  // tulis nama variable, lalu didalam kurung siku isi key untuk mengambil value yang diinginkan
+  // hasil outputnya adalah Nisa Aulia
+  ```
+  
+- __Array Multidimensi:__ Ini adalah array yang berisi array lain. Ini dapat berupa array numerik dalam array numerik, array asosiatif dalam array asosiatif, atau campuran dari keduanya.
+
+  __contoh :__
+  
+  ```php
+  $matriks = array(
+    array(1, 2, 3),
+    array(4, 5, 6),
+    array(7, 8, 9)
+  );
+  ```
+
+
+  __cara mengakses nilai dalam array asosiatif :__
+
+  ```php
+  echo $matriks[1][2];
+
+  // tulis nama variable, lalu didalam kurung siku isi dengan index array paling luar, lalu index array selanjutnnya
+  // hasil outputnya adalah 5
+  ```
+
+
+  ## Contoh Kasus (1) bagaimana mengakses data-data dibawah ini:'
+
+  
+1. jika saya ingin mengakses __umurnya riski hidayat__ bagaimana caranya?
+2. jika saya ingin mengakses __nilai pemweb-nya alya__ bagaimana caranya?
+3. jika saya ingin mengakses __nilai rbjk-nya fikri__ bagaimana caranya?
+4. jika saya ingin mengakses __nama iratih__ bagaimana caranya?
+5. jika saya ingin mengakses __usia dari salzabila__ bagaimana caranya?
+   
+![array1](https://github.com/irfanltf/php-dasar/assets/48278734/e70ef484-ddf8-4db6-a657-9a65de143df7)
+
+
+
+  ## Contoh Kasus (2) menampilkan semua dalam table pada html:
+__bisa lakukan seperti ini :__
+![array2](https://github.com/irfanltf/php-dasar/assets/48278734/d3ac652d-8f1c-4725-aefe-eadda37baa06)
+
+__atau seperti ini :__
+![array3](https://github.com/irfanltf/php-dasar/assets/48278734/c1789b1a-ca4b-464f-95c4-73eac898a321)
+
+
+
+
 ## 3. Manipulasi Array
+
+count(): Menghitung jumlah elemen dalam array.
+```php
+$buah = array("Apel", "Jeruk", "Mangga");
+echo count($buah); // Output: 3
+```
+
+array_push(): Menambahkan elemen ke akhir array.
+```php
+$buah = array("Apel", "Jeruk");
+array_push($buah, "Mangga");
+// $buah sekarang menjadi: array("Apel", "Jeruk", "Mangga")
+```
+
+array_pop(): Menghapus elemen terakhir dari array.
+```php
+$buah = array("Apel", "Jeruk", "Mangga");
+array_pop($buah);
+// $buah sekarang menjadi: array("Apel", "Jeruk")
+```
+
+array_shift(): Menghapus elemen pertama dari array.
+```php
+$buah = array("Apel", "Jeruk", "Mangga");
+array_shift($buah);
+// $buah sekarang menjadi: array("Jeruk", "Mangga")
+```
+
+array_unshift(): Menambahkan elemen ke awal array.
+```php
+$buah = array("Jeruk", "Mangga");
+array_unshift($buah, "Apel");
+// $buah sekarang menjadi: array("Apel", "Jeruk", "Mangga")
+```
+
+array_merge(): Menggabungkan dua atau lebih array.
+```php
+$buah1 = array("Apel", "Jeruk");
+$buah2 = array("Mangga", "Pisang");
+$buah = array_merge($buah1, $buah2);
+// $buah sekarang menjadi: array("Apel", "Jeruk", "Mangga", "Pisang")
+```
+
+array_slice(): Memotong array menjadi bagian tertentu.
+```php
+$buah = array("Apel", "Jeruk", "Mangga", "Pisang");
+$potongan = array_slice($buah, 1, 2);
+// $potongan menjadi: array("Jeruk", "Mangga")
+```
+
+array_search(): Mencari nilai dalam array dan mengembalikan indeksnya.
+```php
+$buah = array("Apel", "Jeruk", "Mangga");
+$indeks = array_search("Jeruk", $buah); // $indeks menjadi 1
+```
+
+array_key_exists(): Memeriksa apakah indeks tertentu ada dalam array asosiatif.
+```php
+$siswa = array("nama" => "John", "usia" => 20);
+$ada = array_key_exists("usia", $siswa); // $ada menjadi true
+```
+
+sort(): Mengurutkan array numerik secara ascending.
+```php
+$angka = array(5, 3, 1, 4, 2);
+sort($angka); // $angka menjadi: array(1, 2, 3, 4, 5)
+```
+
+
+rsort(): Mengurutkan array numerik secara descending.
+```php
+$angka = array(5, 3, 1, 4, 2);
+rsort($angka); // $angka menjadi: array(5, 4, 3, 2, 1)
+```
+
+## Studi Kasus (1) 
+
+terdapat sebuah array dibawah ini :
+```php
+// Inisialisasi array data produk
+$produk = [
+    ["id" => 1, "nama" => "Laptop", "harga" => 10000000],
+    ["id" => 2, "nama" => "Smartphone", "harga" => 5000000],
+    ["id" => 3, "nama" => "Tablet", "harga" => 3000000],
+    ["id" => 4, "nama" => "Mouse", "harga" => 50000],
+    ["id" => 5, "nama" => "Keyboard", "harga" => 100000],
+];
+```
+
+array teersebut akan ditampilkan dalam bentuk html seperti gambar berikut :
+
+![array4](https://github.com/irfanltf/php-dasar/assets/48278734/09bad454-27fc-4065-9412-51035adb09c3)
+
+__scenario :__
+
+1. Jumlah Produk diperoleh dari total data yang terdapat pada array
+2. Tambahkan data pada array, yaitu data headset dengan id 6 dan harga 200000
+3. Hapus data dengan ID 3
+4. Urutkan dari harga termurah
+5. Semua data ditampilkan pada bagian daftar produk mahal diatas satu juta
+6. filter data dan tampilkan pada bagian produk
+7. Sehingga harusnya datanya tampil seperti diatas
+
+
+
+
 
 ## License
 
