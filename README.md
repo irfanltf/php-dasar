@@ -928,16 +928,79 @@ $user_id = $_SESSION['user_id'];
 
 
 # 6. Function
+Fungsi (function) adalah bagian penting dalam bahasa pemrograman PHP. Mereka memungkinkan Anda untuk mengelompokkan kode yang dapat digunakan kembali ke dalam blok logis dan memberikan nama pada blok tersebut. PHP memiliki berbagai jenis fungsi yang dapat Anda gunakan untuk melakukan berbagai tugas. Berikut adalah beberapa materi tentang fungsi PHP:
 ## 1. Apa itu Function
+Fungsi adalah blok kode yang dapat digunakan kembali dan memberikan nama pada blok tersebut. Mereka digunakan untuk mengorganisasi kode Anda, membuat kode lebih mudah dibaca, dan menghindari pengulangan.
 ## 2. Jenis-Jenis Function
 ### Build in Function
-### Custom Function
-### Custom Rekursif
-### Anonim Function
-### Callback Function
-## 3. Parameter dalam Function
-## 4. Return
+Fungsi built-in (atau fungsi bawaan) dalam PHP adalah fungsi yang sudah disediakan oleh PHP itu sendiri dan dapat langsung digunakan tanpa perlu mendefinisikan ulang. Fungsi ini mencakup berbagai fungsi yang melakukan tugas-tugas umum seperti manipulasi string, pengolahan array, operasi matematika, input/output, dan banyak lagi.
 
+Berikut beberapa contoh fungsi built-in dalam PHP beserta penjelasan singkat:
+strlen(): Fungsi ini digunakan untuk menghitung panjang (jumlah karakter) dari sebuah string.
+```php
+$teks = "Hello, World!";
+echo strlen($teks); // Output: 13
+```
+
+strtolower() dan strtoupper(): Fungsi ini mengubah huruf dalam sebuah string menjadi huruf kecil atau huruf besar.
+```php
+$teks = "Hello, World!";
+echo strtolower($teks); // Output: hello, world!
+echo strtoupper($teks); // Output: HELLO, WORLD!
+```
+
+date(): Fungsi ini digunakan untuk mengambil tanggal dan waktu saat ini atau dapat memformat tanggal sesuai dengan kebutuhan.
+```php
+echo date("Y-m-d"); // Output: Tanggal saat ini dalam format "YYYY-MM-DD"
+echo date("H:i:s"); // Output: Waktu saat ini dalam format "HH:MM:SS"
+```
+dan masih banyak yang lainnya....
+
+
+
+### Custom Function
+Anda dapat membuat fungsi kustom Anda sendiri untuk melakukan tugas tertentu. Fungsi kustom didefinisikan dengan kata kunci function.
+```php
+function namaFungsi($parameter1, $parameter2, ...) {
+    // Kode yang akan dieksekusi ketika fungsi dipanggil
+    // Anda dapat melakukan operasi atau mengembalikan nilai di sini
+    return $hasil;
+}
+
+```
+
+__contohnya__
+```php
+function tambah($angka1, $angka2) {
+    $hasil = $angka1 + $angka2;
+    return $hasil;
+}
+
+$hasilTambah = tambah(5, 3);
+echo "Hasil penjumlahan: " . $hasilTambah; // Output: Hasil penjumlahan: 8
+```
+
+## Contoh Kasus (1) Membuat function konversi ke mata uang rupiah
+
+__buat fungsinya dahulu pada file fungsi.php__
+![fungsi](https://github.com/irfanltf/php-dasar/assets/48278734/99416867-07c8-4ffd-bd16-3e189a336f63)
+
+__panggil fungsinya, tapi jangna lupa di include dulu filenya__
+![penjualan](https://github.com/irfanltf/php-dasar/assets/48278734/1b64a2ee-a859-4653-9e6f-41e084833a52)
+
+
+
+
+### Rekursif Function
+Fungsi yang memanggil dirinya sendiri. Ini sering digunakan untuk mengatasi permasalahan yang dapat dipecahkan secara rekursif, seperti perhitungan faktorial atau pencarian dalam struktur data seperti pohon.
+### Anonim Function
+Fungsi yang tidak memiliki nama dan biasanya digunakan sebagai argumen untuk fungsi lain atau disimpan dalam variabel.
+### Callback Function
+ungsi yang digunakan sebagai argumen untuk fungsi lain dan dipanggil saat peristiwa tertentu terjadi.
+## 3. Parameter dalam Function
+Fungsi dapat menerima parameter sebagai input. Parameter adalah nilai yang diberikan kepada fungsi saat dipanggil. Anda dapat menggunakan parameter untuk membuat fungsi lebih fleksibel.
+## 4. Return
+Fungsi dapat mengembalikan nilai menggunakan pernyataan return. Nilai ini dapat digunakan di dalam program Anda.
 
 ## License
 
