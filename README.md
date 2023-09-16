@@ -816,9 +816,107 @@ __bagaimana cara menjalankan session pada php?__
    ```php
    session_destroy();
    ```
+## Contoh Kasus (1) menambahkan session pada saat login
+
+__buat halaman login.php__
+
+![login](https://github.com/irfanltf/php-dasar/assets/48278734/807de84b-b341-46bf-a006-62370f80e776)
+
+
+__buat halaman beranda.php__
+
+![beranda](https://github.com/irfanltf/php-dasar/assets/48278734/3379e3d2-1406-427e-91f6-332539f5c441)
+
+__buat halaman logout.php__
+![logout](https://github.com/irfanltf/php-dasar/assets/48278734/10328dd2-b251-4dc7-9fc2-a85c46db8c2a)
+
+
+
+
+
+
+   
 
 ## 3. Cookie
+Cookies adalah metode lain untuk menyimpan data pada sisi klien. Cookies adalah informasi kecil yang dikirim oleh server web dan disimpan di komputer pengguna. Mereka digunakan untuk mengidentifikasi pengguna, menyimpan preferensi, dan melacak aktivitas pengguna.
 
+Dalam PHP, Anda dapat menggunakan variabel super global $_COOKIE untuk mengakses data dari cookie yang diterima dari klien. Selain itu, Anda dapat menggunakan fungsi-fungsi PHP untuk mengatur dan mengirim cookie ke klien.
+
+```php
+setcookie("user_name", "Irfanltf", time() + 3600, "/");
+```
+Penjelasan:
+
+- setcookie() digunakan untuk mengatur cookie. Dalam contoh di atas, kita mengatur cookie dengan nama "user_name" dan nilainya "Irfanltf".
+- time() + 3600 mengatur waktu kadaluarsa cookie dalam detik dari saat ini. Dalam contoh ini, cookie akan kadaluarsa dalam 1 jam.
+- "/" adalah jalur atau direktori tempat cookie dapat digunakan. Dalam contoh ini, cookie dapat digunakan di seluruh situs web.
+
+```php
+if (isset($_COOKIE['user_name'])) {
+    $user_name = $_COOKIE['user_name'];
+    echo "Halo, $user_name!";
+} else {
+    echo "Cookie 'user_name' tidak ditemukan.";
+}
+```
+Penjelasan :
+Kode di atas memeriksa apakah cookie "user_name" ada dalam $_COOKIE.
+Jika cookie ditemukan, nilainya akan diambil dan digunakan. Jika tidak, pesan kesalahan akan ditampilkan.
+
+__menghapus cookie__
+```php
+setcookie("user_name", "", time() - 3600, "/");
+```
+
+Penjelasan:
+
+Untuk menghapus cookie, Anda dapat mengatur waktu kadaluarsa cookie ke masa lalu (dalam contoh di atas, waktu -3600).
+
+__Keamanan Cookies:__
+
+- Hindari menyimpan data sensitif seperti kata sandi dalam cookies.
+- Hindari menyimpan data besar atau terlalu banyak dalam cookies karena ini dapat mempengaruhi kinerja situs.
+- Selalu validasi data yang Anda terima dari cookies sebelum menggunakannya, karena pengguna dapat memanipulasi cookies.
+- Gunakan HTTPS untuk mengamankan data saat mengirimkan dan menerima cookies.
+
+Cookies adalah cara yang umum digunakan untuk mengidentifikasi pengguna dan menyimpan preferensi di situs web. Mereka berguna untuk mengingatkan pengguna saat mereka kembali ke situs Anda. Namun, pastikan untuk menggunakan mereka dengan bijak dan memerhatikan keamanan.
+
+
+## Contoh Kasus (2) Menambahkan Cookie pada file sebelumnya
+
+__tambahkan cookie pada saat validasi pada file login.php__
+```php
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Contoh validasi sederhana, seharusnya dilakukan validasi yang lebih aman
+    if ($username === 'user123' && $password === 'password123') {
+        // Simpan ID pengguna ke dalam sesi
+        $_SESSION['user_id'] = 123;
+        header('Location: beranda.php');
+        exit();
+    } else {
+        $pesan_error = 'Username atau password salah';
+    }
+}
+```
+
+__gunakan cookie pada file beranda.php__
+```php
+<?php
+session_start();
+
+// Jika pengguna belum login, alihkan ke halaman login
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
+
+// Ambil ID pengguna dari sesi
+$user_id = $_SESSION['user_id'];
+?>
+``` 
 
 ## License
 
