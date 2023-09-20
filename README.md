@@ -499,8 +499,10 @@ Iterasi luar: 3, Iterasi dalam: 2
 ## Contoh Kasus (4) Membuat Dropdown Pilihan Warna
 ![foreach](https://github.com/irfanltf/php-dasar/assets/48278734/13b10a4c-6e03-4625-811d-7d12de86ce5c)
 
-
-
+Kelompok 3: 0
+Kelompok 7 : 0
+Kelompok 5 : 60
+Kelompok 2 : 0;
 # 3. Pengolahan Form
 Pengolahan form adalah bagian penting dari pengembangan web yang memungkinkan pengguna berinteraksi dengan halaman web Anda. Dalam PHP, Anda dapat dengan mudah mengirim dan menerima data dari formulir HTML.
 ## 1. Mengirim dan menerima data dari formulir HTML
