@@ -1021,6 +1021,87 @@ Fungsi dapat menerima parameter sebagai input. Parameter adalah nilai yang diber
 ## 4. Return
 Fungsi dapat mengembalikan nilai menggunakan pernyataan return. Nilai ini dapat digunakan di dalam program Anda.
 
+# 7 OOP Pada php
+Materi PHP tentang Object-Oriented Programming (OOP) adalah cara untuk mengorganisasi dan mengelola kode PHP Anda dengan menggunakan konsep objek dan kelas. OOP memungkinkan Anda untuk membuat kode yang lebih terstruktur, mudah dipahami, dan mudah dipelihara.
+## 1 Class
+<img width="973" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/8c34a695-a7ff-4fec-9cf4-36e9238bd256">
+
+___`sumber ilustrasi: https://lovelyristin.com/cara-membuat-class-dan-objek-pada-python`___
+
+Kelas adalah blueprint atau cetakan yang digunakan untuk membuat objek. Ini adalah struktur utama dalam pemrograman berorientasi objek yang mendefinisikan karakteristik (properti) dan perilaku (method) yang dimiliki oleh objek.
+Contoh: Jika kita mempertimbangkan konsep mobil, kelas akan berisi informasi tentang bagaimana mobil itu seharusnya, seperti tipe, roda, kecepatan dan cara mengendarainya.
+
+![class mobil](https://github.com/irfanltf/php-dasar/assets/48278734/f92dd151-7545-4b63-81d5-665b6c3ff137)
+
+
+## 2 Object
+
+<img width="887" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/48122d46-f15c-49dd-935b-b249c6d728ce">
+
+
+<img width="915" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/e7b186ff-6d07-4fcb-8ad5-3c609033fa95">
+
+___`sumber ilustrasi: https://lovelyristin.com/cara-membuat-class-dan-objek-pada-python`___
+
+Objek adalah instance konkret dari sebuah kelas. Ini adalah hasil nyata dari blueprint atau cetakan yang telah dibuat. Objek memiliki karakteristik (properti) dan perilaku (method) sesuai dengan yang telah ditentukan oleh kelas.
+Contoh: Jika kita memiliki kelas "Mobil", maka mobil spesifik yang Anda miliki di dunia nyata adalah objek. Misalnya, mobil dengan tipe "CUV" dan warna "Merah" adalah objek yang diciptakan berdasarkan kelas "Mobil".
+
+![object mobil](https://github.com/irfanltf/php-dasar/assets/48278734/5e5ccec1-4a3b-400e-b707-fbe7c11e8996)
+
+
+
+## 3 Properti
+
+<img width="896" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/7e0de879-e506-47d7-ae61-83f93f29924e">
+
+___`sumber ilustrasi: https://lovelyristin.com/cara-membuat-class-dan-objek-pada-python`___
+
+Properti adalah variabel yang digunakan untuk menyimpan data dalam objek. Properti mendefinisikan karakteristik objek dan dapat berupa angka, teks, atau tipe data lainnya.
+Contoh: Dalam kelas "Mobil," properti-properti mungkin mencakup merek, warna, nomor plat, tahun pembuatan, dan sebagainya.
+
+![properti](https://github.com/irfanltf/php-dasar/assets/48278734/43be07fb-bb9d-4ff3-8f3d-59f03d761120)
+
+
+## 4 Method
+
+<img width="896" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/d32e650e-d188-482b-a9d4-7f508cd174d6">
+
+___`sumber ilustrasi: https://lovelyristin.com/cara-membuat-class-dan-objek-pada-python`___
+
+Method adalah fungsi atau tindakan (prilaku) yang dapat dilakukan oleh objek. Method mendefinisikan perilaku objek dan memungkinkan objek untuk berinteraksi dengan lingkungannya atau objek lainnya.
+Contoh: Dalam kelas "Mobil," method-method mungkin mencakup "Maju" "Berhenti," "Ganti Oli," dan sebagainya.
+
+![method](https://github.com/irfanltf/php-dasar/assets/48278734/723b87e9-add6-4947-8975-0038907755ea)
+
+![object](https://github.com/irfanltf/php-dasar/assets/48278734/4549eb1d-d4cc-4b47-bd2d-46a68ee982b1)
+
+
+## Mari berfikir!!!!
+1. Jika contoh kasusnya Sepedah Kira kira apa saja properti dan methodnya
+2. jika contoh kasusnya Sepatu kira-kira apa saja properti dan methodnya
+3. jika contoh kasusnya Buku kira-kira apa saja properti dan methodnya
+4. jika conoth kasusnya Rumah kira-kira apa saja properti dan methodnya
+5. jika contoh kasusnya Manusia kira-kira apa saja properti dan methodnya
+6. jika contoh kasusnya Film kira-kira apa saja properti dan methodnya
+7. jika contoh kasusnya Barang kira-kira apa saja ya properti dan methodnya
+8. jika contoh kasusnya Mahasiswa kira-kira apa saja ya properti dan methodnya
+9. dan yang lainya, mari kita anlisis agar lebih paham tentang class, object, properti dan method
+
+
+  ## 5 Constructor
+  ## 6 Inheritence
+  ## 7 Overidding
+  ## 8 Visibility
+  ## 9 Setter dan Getter
+  ## 10 Static keyword
+  ## 11 Constant
+  ## 12 Abstract Class
+  ## 13 Interface
+  ## 14 Autoloading
+  ## 15 namespace
+
+
+
 ## License
 
 [mirfanlutfi](https://github.com/irfanltf)
