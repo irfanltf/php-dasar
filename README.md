@@ -56,6 +56,7 @@
   + [Interface](#13-interface)
   + [Autoloading](#14-Autoloading)
   + [Namespace](#15-namespace)
+  + 
     
   
 # 1. Tipe Data dalam PHP
