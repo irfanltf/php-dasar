@@ -40,6 +40,22 @@
     + [Callback Function](#callback-function)
   + [Parameter dalam Function](#3-parameter-dalam-function)
   + [Nilai Kembali (Return)](#4-return)
+* [Object Oriented Programming PHP](#7-oop-pada-php)
+  + [Class](#1-class)
+  + [Object](#2-object)
+  + [Properti](#3-properti)
+  + [Method](#4-method)
+  + [Constructor](#5-constructor)
+  + [Inheritence](#6-inheritence)
+  + [Overidding](#7-overidding)
+  + [Visibility](#8-visibility)
+  + [Setter dan Getter](#9-setter-dan-getter)
+  + [Static Keyword](#10-static-keyword)
+  + [Constant](#11-constant)
+  + [Abstract Class](#12-abstract-class)
+  + [Interface](#13-interface)
+  + [Autoloading](#14-Autoloading)
+  + [Namespace](#15-namespace)
     
   
 # 1. Tipe Data dalam PHP
