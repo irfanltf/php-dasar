@@ -1088,7 +1088,20 @@ Contoh: Dalam kelas "Mobil," method-method mungkin mencakup "Maju" "Berhenti," "
 9. dan yang lainya, mari kita anlisis agar lebih paham tentang class, object, properti dan method
 
 
-  ## 5 Constructor
+## 5 Constructor
+![construct](https://github.com/irfanltf/php-dasar/assets/48278734/513a9fdf-8a1f-4179-92c4-511fa83a42af)
+
+Constructor adalah method atau function yang otomatis akan dijalankan saat class diinstansiasi (dibuat sebuah object), pada bagian constructor kita dapat melakukan apapun yang bisa dilakukan dalam method / function kecuali mengembalikan nilai / return value. Dalam PHP, constructor didefinisikan dengan nama khusus, yaitu __construct.
+
+![construct](https://github.com/irfanltf/php-dasar/assets/48278734/76bc09a9-d958-4bdf-90e8-632406a3459e)
+
+Saat Anda mendefinisikan lebih dari satu constructor dalam sebuah kelas di PHP, yang terakhir didefinisikan akan menggantikan yang sebelumnya. Artinya, PHP tidak mendukung overload constructor seperti beberapa bahasa pemrograman lainnya yang memungkinkan Anda memiliki beberapa constructor dengan jumlah dan jenis parameter yang berbeda.
+
+Jika Anda ingin memberikan fleksibilitas dalam penginisialisasian objek dengan jumlah parameter yang berbeda, Anda dapat menggunakan parameter default dalam constructor tunggal dan kemudian menguji kondisi di dalam constructor untuk menentukan tindakan yang harus diambil berdasarkan parameter yang diterima. Ini adalah pendekatan umum dalam PHP ketika Anda ingin mengatasi situasi seperti itu.
+
+![constructs](https://github.com/irfanltf/php-dasar/assets/48278734/ab9d8ad7-35d7-429d-9c40-23a94ba00c12)
+
+
   ## 6 Inheritence
   ## 7 Overidding
   ## 8 Visibility
