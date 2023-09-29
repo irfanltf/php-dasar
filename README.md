@@ -1093,13 +1093,18 @@ Contoh: Dalam kelas "Mobil," method-method mungkin mencakup "Maju" "Berhenti," "
 
 Constructor adalah method atau function yang otomatis akan dijalankan saat class diinstansiasi (dibuat sebuah object), pada bagian constructor kita dapat melakukan apapun yang bisa dilakukan dalam method / function kecuali mengembalikan nilai / return value. Dalam PHP, constructor didefinisikan dengan nama khusus, yaitu __construct.
 
-![construct](https://github.com/irfanltf/php-dasar/assets/48278734/76bc09a9-d958-4bdf-90e8-632406a3459e)
+![construct](https://github.com/irfanltf/php-dasar/assets/48278734/14b59e64-e517-4f9f-9fd3-5455a8f43b7e)
+
+
 
 Saat Anda mendefinisikan lebih dari satu constructor dalam sebuah kelas di PHP, yang terakhir didefinisikan akan menggantikan yang sebelumnya. Artinya, PHP tidak mendukung overload constructor seperti beberapa bahasa pemrograman lainnya yang memungkinkan Anda memiliki beberapa constructor dengan jumlah dan jenis parameter yang berbeda.
 
+![constructs](https://github.com/irfanltf/php-dasar/assets/48278734/ab9d8ad7-35d7-429d-9c40-23a94ba00c12)
+
 Jika Anda ingin memberikan fleksibilitas dalam penginisialisasian objek dengan jumlah parameter yang berbeda, Anda dapat menggunakan parameter default dalam constructor tunggal dan kemudian menguji kondisi di dalam constructor untuk menentukan tindakan yang harus diambil berdasarkan parameter yang diterima. Ini adalah pendekatan umum dalam PHP ketika Anda ingin mengatasi situasi seperti itu.
 
-![constructs](https://github.com/irfanltf/php-dasar/assets/48278734/ab9d8ad7-35d7-429d-9c40-23a94ba00c12)
+![constructs](https://github.com/irfanltf/php-dasar/assets/48278734/9a9fcfad-6437-46c7-b80d-9c4fdebe52dd)
+
 
 
   ## 6 Inheritence
