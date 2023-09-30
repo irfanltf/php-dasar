@@ -1089,7 +1089,7 @@ Contoh: Dalam kelas "Mobil," method-method mungkin mencakup "Maju" "Berhenti," "
 
 
 ## 5 Constructor
-![construct](https://github.com/irfanltf/php-dasar/assets/48278734/513a9fdf-8a1f-4179-92c4-511fa83a42af)
+
 
 Constructor adalah method atau function yang otomatis akan dijalankan saat class diinstansiasi (dibuat sebuah object), pada bagian constructor kita dapat melakukan apapun yang bisa dilakukan dalam method / function kecuali mengembalikan nilai / return value. Dalam PHP, constructor didefinisikan dengan nama khusus, yaitu __construct.
 
@@ -1104,6 +1104,13 @@ Saat Anda mendefinisikan lebih dari satu constructor dalam sebuah kelas di PHP, 
 Jika Anda ingin memberikan fleksibilitas dalam penginisialisasian objek dengan jumlah parameter yang berbeda, Anda dapat menggunakan parameter default dalam constructor tunggal dan kemudian menguji kondisi di dalam constructor untuk menentukan tindakan yang harus diambil berdasarkan parameter yang diterima. Ini adalah pendekatan umum dalam PHP ketika Anda ingin mengatasi situasi seperti itu.
 
 ![constructs](https://github.com/irfanltf/php-dasar/assets/48278734/9a9fcfad-6437-46c7-b80d-9c4fdebe52dd)
+
+### Contoh Mengakses method ddan properti pada class mobil pada class pengendara
+
+![mengakses pada class lain](https://github.com/irfanltf/php-dasar/assets/48278734/04826c56-ed41-4bfc-88b9-64122bf71479)
+
+### Contoh jika class diakses pada file yang berbeda, gunakan function `require_once`
+![mengakses pada class lain2](https://github.com/irfanltf/php-dasar/assets/48278734/9e42873e-92d9-4b11-a982-c8b573890479)
 
 
 
