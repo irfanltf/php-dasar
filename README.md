@@ -1112,18 +1112,44 @@ Jika Anda ingin memberikan fleksibilitas dalam penginisialisasian objek dengan j
 ### Contoh jika class diakses pada file yang berbeda, gunakan function `require_once`
 ![mengakses pada class lain2](https://github.com/irfanltf/php-dasar/assets/48278734/9e42873e-92d9-4b11-a982-c8b573890479)
 
+## 6 Inheritence
+Inheritance (Pewarisan) adalah salah satu konsep penting dalam pemrograman berorientasi objek (OOP) yang memungkinkan kelas (class) baru untuk mewarisi sifat dan perilaku (properti dan method) dari kelas yang sudah ada (kelas induk atau superclass). Konsep ini memungkinkan Anda untuk membangun hierarki kelas di mana kelas anak (subclass atau derived class) dapat mewarisi atribut dan metode dari kelas induknya.
+
+jika mengacu pada kasus sebelumnya adalah seperti berikut ini :
+
+![inheriten](https://github.com/irfanltf/php-dasar/assets/48278734/e3731071-f525-4822-bb88-c2c105e382e8)
+
+![inheriten2](https://github.com/irfanltf/php-dasar/assets/48278734/f42e402d-be9c-4b61-995b-d58b7a3bd259)
 
 
-  ## 6 Inheritence
-  ## 7 Overidding
-  ## 8 Visibility
-  ## 9 Setter dan Getter
-  ## 10 Static keyword
-  ## 11 Constant
-  ## 12 Abstract Class
-  ## 13 Interface
-  ## 14 Autoloading
-  ## 15 namespace
+## 7 Overidding
+
+Overriding adalah salah satu konsep penting dalam pemrograman berorientasi objek (OOP) yang memungkinkan kelas anak (subclass) untuk mengganti (override) implementasi dari sebuah method yang sudah ada di kelas induk (superclass). Dengan kata lain, dalam overriding, kelas anak menyediakan implementasi ulang untuk method yang sudah didefinisikan di kelas induk.
+
+jika mengacu pada kasus sebelumnya adalah seperti berikut ini :
+
+![inheriten](https://github.com/irfanltf/php-dasar/assets/48278734/912f8070-0ea6-4c94-93fe-66c0a6b4d6ee)
+
+![overriding2](https://github.com/irfanltf/php-dasar/assets/48278734/71cfeaa0-e5a9-4e48-a213-652b82727d1c)
+
+
+## 8 Visibility
+
+Visibility (atau access modifiers) adalah salah satu konsep penting dalam pemrograman berorientasi objek (OOP) yang mengatur aksesibilitas (tingkat visibilitas) terhadap properti dan method dalam suatu kelas. Terdapat tiga tingkat visibilitas utama dalam PHP:
+
+Public: Properti atau method yang didefinisikan sebagai public dapat diakses dari mana saja, baik dari dalam kelas itu sendiri, dari kelas turunan (subclass), maupun dari luar kelas.
+
+Protected: Properti atau method yang didefinisikan sebagai protected hanya dapat diakses dari dalam kelas itu sendiri dan dari kelas turunan (subclass) yang meng-extend kelas tersebut. Properti atau method protected tidak dapat diakses dari luar kelas.
+
+Private: Properti atau method yang didefinisikan sebagai private hanya dapat diakses dari dalam kelas itu sendiri. Properti atau method private tidak dapat diakses dari kelas turunan atau dari luar kelas.
+
+## 9 Setter dan Getter
+## 10 Static keyword
+## 11 Constant
+## 12 Abstract Class
+## 13 Interface
+## 14 Autoloading
+## 15 namespace
 
 
 
