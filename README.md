@@ -1145,18 +1145,141 @@ Visibility (atau access modifiers) adalah salah satu konsep penting dalam pemrog
 
 Public: Properti atau method yang didefinisikan sebagai public dapat diakses dari mana saja, baik dari dalam kelas itu sendiri, dari kelas turunan (subclass), maupun dari luar kelas.
 
+
+
 Protected: Properti atau method yang didefinisikan sebagai protected hanya dapat diakses dari dalam kelas itu sendiri dan dari kelas turunan (subclass) yang meng-extend kelas tersebut. Properti atau method protected tidak dapat diakses dari luar kelas.
 
 Private: Properti atau method yang didefinisikan sebagai private hanya dapat diakses dari dalam kelas itu sendiri. Properti atau method private tidak dapat diakses dari kelas turunan atau dari luar kelas.
 
+contohnya sebagai berikut :
+
+![visibility](https://github.com/irfanltf/php-dasar/assets/48278734/0c762337-c28b-4365-9279-6e8437de1006)
+
+Dalam contoh ini, kita telah menambahkan tingkat visibilitas yang berbeda pada properti dan method di kelas Mobil dan Pengendara. Properti tipe dideklarasikan sebagai public, properti roda dideklarasikan sebagai protected, dan properti kecepatan dideklarasikan sebagai private. Begitu pula dengan method klakson(), infoRoda(), dan infoKecepatan().
+
+Kemudian, dalam kelas Pengendara, kita mengakses properti dan method dari kelas Mobil yang memiliki tingkat visibilitas protected dan private dengan menggunakan objek $this dalam method infoPengendara()
+
 ## 9 Setter dan Getter
+
+Setter dan getter adalah metode khusus yang digunakan dalam pemrograman berorientasi objek (OOP) untuk mengakses dan mengubah properti (variabel) privat (private property) dalam suatu kelas. Metode ini digunakan untuk menerapkan prinsip enkapsulasi, di mana properti yang bersifat privat tidak dapat diakses secara langsung dari luar kelas. Dengan menggunakan setter dan getter, Anda dapat mengontrol bagaimana akses dan perubahan properti tersebut terjadi.
+
+Setter: Setter adalah metode yang digunakan untuk mengubah (set) nilai properti privat dalam kelas. Setter biasanya memiliki parameter yang mewakili nilai baru yang ingin diatur pada properti.
+
+Getter: Getter adalah metode yang digunakan untuk mengambil (get) nilai properti privat dalam kelas. Getter biasanya tidak memiliki parameter dan mengembalikan nilai properti.
+
+Contohnya :
+
+![setterhgetter](https://github.com/irfanltf/php-dasar/assets/48278734/17a19bab-b830-40f4-b634-50b7b30de7f5)
+
+Keuntungan menggunakan setter dan getter meliputi:
+
+Enkapsulasi: Properti privat dapat disembunyikan dari akses langsung dari luar kelas, sehingga menghindari perubahan yang tidak sah.
+
+Validasi: Anda dapat menerapkan validasi dalam setter untuk memastikan bahwa nilai yang diatur pada properti sesuai dengan aturan tertentu sebelum disimpan.
+
+Fleksibilitas: Jika Anda perlu mengubah perilaku setter atau getter di masa depan, Anda dapat melakukannya tanpa mengubah cara penggunaan properti dalam kode yang sudah ada.
+
+Penggantian Properti: Jika Anda ingin mengubah cara properti disimpan atau diambil, Anda hanya perlu mengubah setter atau getter, bukan seluruh kode yang menggunakannya.
+
+Penggunaan setter dan getter merupakan praktik baik dalam OOP untuk memastikan pengelolaan data yang aman dan terstruktur.
+
 ## 10 Static keyword
+
+Keyword static digunakan dalam pemrograman berorientasi objek (OOP) untuk mendefinisikan properti atau method yang terkait dengan kelas itu sendiri, bukan dengan instance (objek) dari kelas tersebut. Ini berarti properti dan method static dapat diakses tanpa harus membuat objek dari kelas tersebut. Keyword static digunakan untuk membuat sesuatu menjadi "terkait dengan kelas" daripada "terkait dengan objek."
+
+Properti Static: Properti static adalah properti yang terkait dengan kelas, bukan dengan objek. Properti ini dapat digunakan untuk menyimpan data yang bersifat global untuk seluruh objek dari kelas tersebut. Properti static dideklarasikan dengan menggunakan kata kunci static sebelum nama properti.
+
+Method Static: Method static adalah method yang terkait dengan kelas, bukan dengan objek. Method ini dapat digunakan tanpa harus membuat objek dari kelas tersebut. Method static dideklarasikan dengan menggunakan kata kunci static sebelum nama method.
+
+```php
+class Contoh {
+    public static $propertiStatic = "Ini adalah properti static.";
+    
+    public static function methodStatic() {
+        return "Ini adalah method static.";
+    }
+}
+
+// Mengakses properti static tanpa membuat objek
+echo Contoh::$propertiStatic . "<br>";
+
+// Memanggil method static tanpa membuat objek
+echo Contoh::methodStatic() . "<br>";
+```
+
 ## 11 Constant
+
+Konstanta (constants) adalah nilai tetap yang tidak dapat diubah selama eksekusi program. Dalam pemrograman berorientasi objek (OOP), konstanta sering digunakan untuk menyimpan nilai-nilai yang tetap dan terkait dengan kelas. Konstanta didefinisikan dengan menggunakan kata kunci const atau define() dalam PHP.
+
+![const](https://github.com/irfanltf/php-dasar/assets/48278734/fbf9fe65-0ab3-4ae8-a4af-7f967dddc39e)
+
+Pentingnya penggunaan konstanta dalam OOP:
+
+Tetap dan Terlindungi: Konstanta tidak dapat diubah selama eksekusi program, sehingga nilainya tetap konsisten.
+
+Mudah Dikelola: Konstanta membantu dalam mengelola nilai-nilai tetap yang berhubungan dengan suatu kelas atau program, seperti nilai-nilai konfigurasi atau konstanta matematis.
+
+Menghindari Kesalahan: Menggunakan konstanta daripada angka atau string secara langsung dapat mengurangi kesalahan manusia dalam kode.
+
+Kode Lebih Mudah Dipahami: Konstanta memberikan nama yang berarti untuk nilai-nilai tetap, membuat kode lebih mudah dipahami oleh pembaca.
+
 ## 12 Abstract Class
+
+Abstract class (kelas abstrak) adalah kelas yang tidak dapat diinstansiasi (tidak dapat membuat objek langsung), tetapi digunakan sebagai kerangka dasar untuk kelas-kelas turunannya (subclass). Dalam PHP, Anda mendefinisikan sebuah kelas sebagai abstrak dengan menggunakan kata kunci abstract.
+
+Kelas abstrak dapat memiliki metode abstrak (abstract methods), yang hanya dideklarasikan (tanpa implementasi) dalam kelas abstrak. Implementasi dari metode abstrak ini harus diberikan oleh kelas-kelas turunan (subclass). Tujuan utama dari kelas abstrak adalah untuk memaksakan implementasi metode tertentu dalam kelas-kelas turunan.
+
+
 ## 13 Interface
+Interface (antarmuka) adalah kontrak yang menggambarkan perilaku yang harus diikuti oleh kelas-kelas yang mengimplementasikannya. Dalam PHP, Anda dapat mendefinisikan sebuah interface dengan menggunakan kata kunci interface. Interface berisi deklarasi metode (tanpa implementasi) yang harus diimplementasikan oleh kelas-kelas yang menggunakan interface tersebut.
+
 ## 14 Autoloading
+Autoloading adalah teknik dalam PHP yang memungkinkan Anda secara otomatis memuat kelas (class) yang dibutuhkan tanpa harus secara manual menyertakan setiap file kelas. Autoloading sangat berguna dalam pengembangan berorientasi objek (OOP) karena memungkinkan Anda untuk mengorganisasi kelas Anda ke dalam berbagai file tanpa harus mengimpor file secara manual setiap kali Anda membutuhkannya.
+
+Dalam PHP, Anda dapat menggunakan fungsi spl_autoload_register() untuk mendaftarkan sebuah fungsi autoloader kustom yang akan dipanggil ketika PHP mencoba untuk mengakses kelas yang belum dimuat. Autoloader ini akan mencoba mencari file yang sesuai dengan nama kelas dan memuatnya jika ditemukan.
+
 ## 15 namespace
 
+Namespace adalah fitur dalam PHP yang digunakan untuk mengatur dan mengelompokkan kelas, fungsi, dan konstanta ke dalam "ruang nama" (namespace) yang terpisah. Ini membantu menghindari konflik nama antara berbagai bagian kode dalam proyek yang lebih besar atau antara kode yang berasal dari berbagai sumber eksternal. Namespace juga meningkatkan keterbacaan dan pemeliharaan kode.
+
+Namespace adalah seperti alamat atau label yang membantu PHP menemukan dan mengorganisir kode Anda. Bayangkan Anda memiliki banyak barang di rumah, dan Anda ingin menjaga agar barang-barang tersebut tidak bercampur aduk. Anda menggunakan label atau nama yang berbeda untuk setiap kotak agar Anda tahu di mana barang-barang tertentu disimpan.
+
+Dalam PHP, ketika Anda membuat program yang lebih besar, Anda juga memiliki banyak "barang" (kelas, fungsi, dll.). Anda ingin mengatur mereka sehingga tidak ada kebingungan atau konflik nama. Namespace adalah cara Anda memberi "label" kepada setiap bagian kode Anda sehingga PHP tahu di mana menemukan hal itu.
+
+Contoh:
+
+Misalkan Anda memiliki dua kelas dengan nama yang sama, "Kendaraan," tetapi satu digunakan untuk mengendalikan mobil dan yang lainnya untuk pesawat. Ini akan membingungkan PHP jika Anda tidak memberikan petunjuk yang jelas.
+
+```php
+// Kelas Kendaraan untuk mobil
+class Kendaraan {
+    // ...
+}
+
+// Kelas Kendaraan untuk pesawat
+class Kendaraan {
+    // ...
+}
+```
+
+Dengan menggunakan namespace, Anda memberikan petunjuk kepada PHP tentang di mana setiap Kelas "Kendaraan" berada:
+
+
+```php
+// Kelas Kendaraan untuk mobil
+namespace Mobil;
+
+class Kendaraan {
+    // ...
+}
+
+// Kelas Kendaraan untuk pesawat
+namespace Pesawat;
+
+class Kendaraan {
+    // ...
+}
+```
 
 
 ## License
