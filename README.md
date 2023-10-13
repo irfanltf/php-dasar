@@ -1287,6 +1287,48 @@ class Kendaraan {
 }
 ```
 
+# 8 Berkerja dengan Database
+  ## 1 Menghubungkan ke database
+
+  buka localhost/phpmyadmin pada browser
+  
+  <img width="552" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/59bc8d00-5dc6-4de5-85ee-d42140d4dcb5">
+
+
+  buat database, dan berinama databasenya
+
+  <img width="659" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/28a92e6a-9e6d-4cf4-a579-716b985c1959">
+
+  tentukan nama table dan jumlah kolom dari table yang akan dibuat
+
+  <img width="980" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/41148b58-6e83-4031-bdf2-52b0a78e44ed">
+
+  tentukan nama kolom, tipe data, dan juga set id menjadi primary key, serta auto increment
+
+  <img width="1246" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/adc6885d-0715-4cf2-9b60-94d7ddbe0566">
+
+  simpan, lalu akan tampil sebagai berikut :
+
+  <img width="971" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/a41d79c4-5673-4dd2-b711-0243c36ecc98">
+
+
+  
+  ## 2 Create data ke database
+  ## 3 Read data pada database
+  ## 4 Update data pada database
+  ## 5 Delete data pada database
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## License
 
