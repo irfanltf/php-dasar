@@ -1311,8 +1311,27 @@ class Kendaraan {
 
   <img width="971" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/a41d79c4-5673-4dd2-b711-0243c36ecc98">
 
+  selanjutnya adalah menghubungkan kode php ke database
 
-  
+  1. buat file koneksi.php yang isinya adalah konfigurasi untuk menghubungkan ke database
+     
+     ![var konek](https://github.com/irfanltf/php-dasar/assets/48278734/45b56bae-6f8a-4156-b81e-265e557e1c35)
+
+  2. selanjutkan panggil class mysqli dengan parameter variabel konfigurasikan yang sudah dibuat
+
+     ![class mysqli](https://github.com/irfanltf/php-dasar/assets/48278734/b3457301-1c30-40fa-9548-3849e489dca6)
+
+  3. terakhir cek koneksinya, jika ada konfigurasi yang tidak benar, maka kode selanjutnya akan di die, dan ditampilkan errornya
+
+    ![cek koneksi](https://github.com/irfanltf/php-dasar/assets/48278734/f87e8902-44f3-4540-b909-8c69e03f5151)
+
+  5. jika kita akses file koneksi.php, dan misalkan konfigurasinya salah, maka akan tampil error seperti ini
+
+     <img width="1184" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/59d50052-d4cb-456c-b329-9baebd27f860">
+
+
+
+
   ## 2 Create data ke database
   ## 3 Read data pada database
   ## 4 Update data pada database
