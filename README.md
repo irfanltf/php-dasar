@@ -57,7 +57,7 @@
   + [Autoloading](#14-Autoloading)
   + [Namespace](#15-namespace)
 * [Berkerja dengan Database](#8-bekerja-dengan-database)
-  + [Menghubungkan ke database](#1-menghubungkan ke database)
+  + [Menghubungkan ke database](#1-menghubungkan-ke-database)
   + [Create data ke database](#2-create-data-ke-database)
   + [Read data pada database](#3-read-data-pada-database)
   + [Update data pada database](#4-update-data-pada-database)
