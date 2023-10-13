@@ -1330,9 +1330,22 @@ class Kendaraan {
      <img width="1184" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/59d50052-d4cb-456c-b329-9baebd27f860">
 
 
-
-
   ## 2 Create data ke database
+
+  1. buat file dengan nama insert.php, lalu buat tampilan sebagai berikut :
+     
+   ![html insert](https://github.com/irfanltf/php-dasar/assets/48278734/1d01db90-d3ff-4855-be10-80ad11063b0b)
+
+  2. dan hasilnya harusnya sebagai berikut :
+  
+  <img width="727" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/b56636ef-5e5a-46fd-a02b-1fff5f142ebf">
+
+  4. selanjutnya buat kode php untuk menghubungkan ke database dan juga kode sql untuk menyimpan ke database
+
+     ![php insert](https://github.com/irfanltf/php-dasar/assets/48278734/68f924fa-7748-4c4b-ae14-3906579ad003)
+
+  
+  
   ## 3 Read data pada database
   ## 4 Update data pada database
   ## 5 Delete data pada database
