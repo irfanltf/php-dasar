@@ -1323,7 +1323,7 @@ class Kendaraan {
 
   3. terakhir cek koneksinya, jika ada konfigurasi yang tidak benar, maka kode selanjutnya akan di die, dan ditampilkan errornya
 
-    ![cek koneksi](https://github.com/irfanltf/php-dasar/assets/48278734/f87e8902-44f3-4540-b909-8c69e03f5151)
+    ![cek koneksi](https://github.com/irfanltf/php-dasar/assets/48278734/bde237fc-15d4-4027-9526-895b5f56e189)
 
   5. jika kita akses file koneksi.php, dan misalkan konfigurasinya salah, maka akan tampil error seperti ini
 
