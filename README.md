@@ -1344,9 +1344,35 @@ class Kendaraan {
 
      ![php insert](https://github.com/irfanltf/php-dasar/assets/48278734/68f924fa-7748-4c4b-ae14-3906579ad003)
 
-  
+  5. setelah selesai,  lakukan percobaan dengan mengisi data dan menyimpan datanya
+
+     <img width="911" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/b80b0987-c59c-4f58-b923-a9484fc9aa0e">
+
+
+  6. cek pada database, apakah data berhasil tersimpan
+
+     <img width="650" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/4f7ea561-e0da-4f71-9354-d30313503247">
+
   
   ## 3 Read data pada database
+
+  1. buat file dengan nama read.php, lalu buat tampilannya terlebih dahulu :
+     ![read](https://github.com/irfanltf/php-dasar/assets/48278734/21f8ce35-8fab-432e-8984-4287cb354d6a)
+
+  3. hasilnya akan sebagai berikut :
+     <img width="1393" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/46c285c2-8804-4b5b-98a1-49ca06ee9418">
+
+  4. tambahkan kode php yang digunakan untuk menampilkan data dari database, datanya akan ditampilkan menggunakan perulangan foreach, tambahkan kode berikut didalam tag table dibawah tag tutup tr header
+     ![read foreach](https://github.com/irfanltf/php-dasar/assets/48278734/9e64299c-27e0-440b-a128-e72d14f17f42)
+
+  5. cek lagi hasilnya apakah data yang berhasil disimpan sebelumnya tampil
+
+     <img width="1426" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/0924c63f-e6f7-44a4-ae09-af9a2657e735">
+     
+  6. cek kembali dengan melakukan insert data, dan ketika insert berhasil apakah data berhasil bertambah?
+
+
+  
   ## 4 Update data pada database
   ## 5 Delete data pada database
 
