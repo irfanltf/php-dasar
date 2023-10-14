@@ -1398,7 +1398,9 @@ class Kendaraan {
 
   7. dan yang terakhir, tambahkan kode update data php, untuk menyimpan perubahan ke database ketika tobol simpan di klik
      
-    ![post updat](https://github.com/irfanltf/php-dasar/assets/48278734/15756bb9-8894-4df4-86e2-da3645fdb3c7)
+    
+![post updat](https://github.com/irfanltf/php-dasar/assets/48278734/1ca48583-4e85-411c-99cb-4b2f6b2c6ad5)
+
 
   8. cobalah kembali untuk mengubah data saiful diatas, lalu klik tombol simpan
      
