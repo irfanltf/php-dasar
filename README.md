@@ -1374,6 +1374,38 @@ class Kendaraan {
 
   
   ## 4 Update data pada database
+
+  1. pastikan sudah membuat tombol update pada file read.php yang diarahkan ke file edit.php dengan mengirimkan parameter berupa id
+     
+     ``` <a href='edit.php?id=<?php echo $row["id"]; ?>' class="btn btn-success">Edit</a>```
+     
+  2. buat file dengan nama edit.php, dan buat tampilannya, agar mudah copy saya dari file insert.php, dan sesuaikan isinya, seperti kata tambah data diganti menjadi edit data, dan tambahkan inputan dengan type hidden untuk menyimpan sebuah id seperti berikut ini
+     
+     ![edit data](https://github.com/irfanltf/php-dasar/assets/48278734/7104e4b7-24cb-41fd-920b-6981789b4d08)
+
+  3. tampilanya akan menjadi sebagai berikut :
+     <img width="727" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/ce60df17-16ae-4eb7-a4e7-2c220c796feb">
+
+  4. setelah itu tambahkan kode php, untuk mengambil data dari id yang dikirimkan
+
+      ![edi](https://github.com/irfanltf/php-dasar/assets/48278734/0d9cb77e-5da4-4927-b04b-6daba3dccff0)
+
+  5. jika sudah berhasil diambil datanya, selanjutkan tampilkan pada tiap inputn menggunakan atribut value
+    ![value](https://github.com/irfanltf/php-dasar/assets/48278734/62929f0a-9aba-4691-9283-dbafe6a1d24d)
+
+  6. lihat kembali tampilannya, sekarang datanya akan tampil
+     <img width="759" alt="image" src="https://github.com/irfanltf/php-dasar/assets/48278734/1da0ee3a-1f0b-4e04-9acc-76b6dfaae1fa">
+
+  7. dan yang terakhir, tambahkan kode update data php, untuk menyimpan perubahan ke database ketika tobol simpan di klik
+     
+    ![post updat](https://github.com/irfanltf/php-dasar/assets/48278734/15756bb9-8894-4df4-86e2-da3645fdb3c7)
+
+  8. cobalah kembali untuk mengubah data saiful diatas, lalu klik tombol simpan
+     
+
+     
+
+  
   ## 5 Delete data pada database
 
 
