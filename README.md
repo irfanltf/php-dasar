@@ -62,7 +62,7 @@
   + [Read data pada database](#3-read-data-pada-database)
   + [Update data pada database](#4-update-data-pada-database)
   + [Delete data pada database](#5-update-data-pada-database)
-* [Wejangan](#Wejangan)
+* [Renungan](#renungan)
     
     
   
